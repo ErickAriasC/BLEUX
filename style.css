@@ -445,3 +445,40 @@ footer {
 .x{
     width: 10px;
 }
+
+@media (max-width: 920px){
+    .images{
+        display: none;
+    }
+
+    .content_funcionalities{
+        flex-wrap: wrap;
+    }
+
+    .container_img>img {
+        width: 20rem;
+        margin-bottom: 4rem;
+    }
+
+    .information {
+        width: 100%;
+    }
+
+    .options_plans {
+        flex-direction: column;
+    }
+
+    .content_plans{
+        width: 60%;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+   .copy{
+    margin-bottom: 0.5rem;
+   }
+    .copy h3{
+        font-size: 0.7rem;
+    }
+}
