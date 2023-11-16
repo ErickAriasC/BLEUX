@@ -481,4 +481,28 @@ footer {
     .copy h3{
         font-size: 0.7rem;
     }
+
+    .container_logo{
+        width: 30%;
+        margin-left: 3rem;
+    }
+
+    .red_social>ul{
+        margin-right: 9.5rem;
+    }
+    .container_img{
+        margin-left: 10rem;
+    }
+    .information_funcionalities{
+        margin-left: 4rem;
+    }
+
+    .information>div {
+        margin-left: 5rem;
+        margin-top: 7rem;
+    }
+  
+    .options{
+        font-size: 0.8rem;
+    }
 }
