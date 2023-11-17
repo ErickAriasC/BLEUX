@@ -56,7 +56,7 @@ nav {
     color: #f1f2f7;
 }
 
-nav>button {
+nav>.download {
     color: #f1f2f7;
     background: linear-gradient(to right, #7e44d5, #0b7bd5);
     border: none;
@@ -446,7 +446,20 @@ footer {
     width: 10px;
 }
 
+.open,.close{
+    display: none;
+}
+
+
+
 @media (max-width: 920px){
+    header{
+        justify-content: space-evenly;
+    }
+
+    nav{
+        width: 60%;
+    }
     .images{
         display: none;
     }
@@ -459,9 +472,11 @@ footer {
         width: 20rem;
         margin-bottom: 4rem;
     }
-
+    
+ 
     .information {
         width: 100%;
+        height: 33rem;
     }
 
     .options_plans {
@@ -473,7 +488,7 @@ footer {
     }
 
     footer{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
    .copy{
     margin-bottom: 0.5rem;
@@ -483,15 +498,17 @@ footer {
     }
 
     .container_logo{
-        width: 30%;
-        margin-left: 3rem;
+        width: 40%;
+        margin-left: 2rem;
     }
 
     .red_social>ul{
         margin-right: 9.5rem;
     }
     .container_img{
-        margin-left: 10rem;
+        margin-left: 0rem;
+        justify-content: center;
+
     }
     .information_funcionalities{
         margin-left: 4rem;
@@ -505,4 +522,125 @@ footer {
     .options{
         font-size: 0.8rem;
     }
+
+    .content_marketing{
+        font-size: 1.2rem;
+        align-items: center;
+    }
+    .information_plans{
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px){
+
+    .nav_bar{
+        width: auto;
+        position: absolute;
+        right: 0;
+        top: 5rem;
+        flex-direction: column;
+        align-items: center;
+        background-color: #1e172f;
+        visibility: hidden;
+    }
+
+    .nav_bar.visible{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .options{
+        flex-direction: column;
+    }
+
+    .open,.close{
+        display: block;
+    }
+    
+    .open{
+        background-color: transparent;
+        border: none;
+    }
+    .open>img{
+        width: 30px;
+        margin-left: 6rem;
+        margin-right: 2rem;
+    }
+
+    nav>.close{
+        width: 3rem;
+        background-color: transparent ;
+        color: #b6b7ba;
+        font-weight: 800;
+        border: none;        
+    }
+    nav>.download{
+        margin: 0.5rem;
+    }
+    .information h1{
+        font-size: 2.2rem;
+    }
+    .information p{
+        font-size: 1.5rem;
+    }
+
+    .information>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 0.5rem 0 0.5rem;
+    }
+
+    .options_plans{
+        width: 90%;
+    }
+    .funcionalities>h2{
+        font-size: 2.3rem;
+    }
+    .information_funcionalities{
+        width: 70%;
+        margin-left: 0;
+    }
+    .information_funcionalities>h3{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .information_funcionalities>p{
+        font-size: 1.5rem;
+        width: 100%;
+
+    }
+    .plans>h2{
+        font-size: 2.6rem;
+    }
+
+    .plans>p{
+        width: 80%;
+    }
+
+    .content_plans{
+        width: 90%;
+    }
+    .information_plans{
+        gap: 0;
+    }
+    .subscribe_now,.subscribe_lite{
+        width: 50%;
+    }
+   .copy{
+       width: 98%;
+   }
+   .red_social>ul {
+    margin-right: 1rem;
+   }
+   .container_img>img {
+    width: 90%;
+   }
+
 }
